@@ -1,0 +1,16 @@
+services:
+  weather-api:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    environment:
+      WEATHER_KEY : '' # Add your weather api key here
+      S3_BUCKET_NAME : '' # Add your bucket name here
+      AWS_ACCESS_KEY_ID : '' # Add your access key here
+      AWS_REGION : '' # Add your region here
+      AWS_SECRET_ACCESS_KEY: '' # Add your secret key here
+      DYNAMODB_TABLE_NAME : '' # Add your table name here
+      CACHE_EXPIRY_TIME : 300 # 5 minutes
+    volumes:
+      - .:/app
