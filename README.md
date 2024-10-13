@@ -126,15 +126,12 @@ Docker
 
 To deploy the service using Docker, follow these steps:
 
-	1.	Build the Docker image:
-
-docker build -t weather-api .
+	1.	Build the Docker image: docker build weather-api
 
 
-	2.	Run the Docker container:
 
-docker run -d -p 8000:8000 --env-file .env weather-api
 
+	2.	Run the Docker container: docker up weather-api
 
 
 Docker Compose
