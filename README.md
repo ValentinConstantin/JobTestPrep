@@ -70,12 +70,55 @@ GET /weather?city=London
 
 Example Response
 
+
+```json
 {
-    "weather": "Cloudy",
-    "temperature": "15°C",
-    "city": "London",
-    "timestamp": "2024-10-12T14:00:00Z"
+  "coord": {
+    "lon": 26.1063,
+    "lat": 44.4323
+  },
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 289.86,
+    "feels_like": 289.36,
+    "temp_min": 287.09,
+    "temp_max": 290.85,
+    "pressure": 1016,
+    "humidity": 68,
+    "sea_level": 1016,
+    "grnd_level": 1006
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 1.54,
+    "deg": 290
+  },
+  "clouds": {
+    "all": 0
+  },
+  "dt": 1728837880,
+  "sys": {
+    "type": 2,
+    "id": 2037828,
+    "country": "RO",
+    "sunrise": 1728793689,
+    "sunset": 1728833702
+  },
+  "timezone": 10800,
+  "id": 683506,
+  "name": "Bucharest",
+  "cod": 200
 }
+
+```
 
 Deployment
 
