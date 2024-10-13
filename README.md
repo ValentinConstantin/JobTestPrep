@@ -48,10 +48,12 @@ Environment Variables
 
 Set up the following environment variables to configure the application:
 
-	•	WEATHER_KEY: Your OpenWeatherMap API key.
-	•	S3_BUCKET_NAME: Name of your AWS S3 bucket.
-	•	DYNAMODB_TABLE_NAME: Name of your AWS DynamoDB table.
-	•	AWS_REGION: Your AWS region (e.g., us-west-2).
+	•	WEATHER_KEY: Add your weather API key here.
+	•	S3_BUCKET_NAME: Add your AWS S3 bucket name here.
+	•	AWS_ACCESS_KEY_ID: Add your AWS access key here.
+	•	AWS_SECRET_ACCESS_KEY: Add your AWS secret key here.
+	•	AWS_REGION: Add your AWS region (e.g., us-west-2).
+	•	DYNAMODB_TABLE_NAME: Add your AWS DynamoDB table name here.
 	•	CACHE_EXPIRY_TIME: Cache expiry time in seconds (default is 3600 for 1 hour).
 
 API Usage
